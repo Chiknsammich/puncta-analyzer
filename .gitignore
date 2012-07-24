@@ -1,6 +1,13 @@
+# OSX #
+.DS_Store
+
+# Bytecode #
 *.class
 
 # Package Files #
 *.jar
 *.war
 *.ear
+
+# puncta analyzer v1 binaries #
+/v1/puncta-analyzer-v1/*
