@@ -5,7 +5,7 @@ Puncta Analyzer for ImageJ1
 
 Instructions:
 
-1. Puncta Analyzer v1 runs in ImageJ 1.29. To install ImageJ with Puncta Analyzer simply download the [puncta-analyzer-v1.zip](https://github.com/physion/puncta-analyzer/v1/puncta-analyzer-v1.zip) and uncompress. Double-click on ij.jar to launch.
+1. Puncta Analyzer v1 runs in ImageJ 1.29. To install ImageJ with Puncta Analyzer simply download the [puncta-analyzer-v1.zip](https://github.com/physion/puncta-analyzer/blob/master/v1/puncta-analyzer-v1.zip?raw=true) and uncompress. Double-click on ij.jar to launch.
 
 2. Open the ins1.tif image located in samples directory. Use one of the selection tools in the ImageJ menu to determine the region of interest (ROI). We regularly use the circular selection tool to select a region approximately one-cell diameter radially around the soma of interest.
 
@@ -21,5 +21,5 @@ Instructions:
 
 8. Once you complete the previous step, the plugin will provide quantification corresponding to puncta in each channel separately and to colocalized puncta between the two channels.
 
-**Note:** A screencast of these instructions is available [here](https://github.com/physion/puncta-analyzer/v1/Puncta_Analyzer_Screencast.mp4).
+**Note:** A screencast of these instructions is available [here](https://github.com/physion/puncta-analyzer/blob/master/v1/screenshots/Puncta_Analyzer_Screencast.mp4?raw=true).
 
