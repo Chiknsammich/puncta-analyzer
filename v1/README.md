@@ -20,5 +20,5 @@ Instructions:
 
 8. Once you complete the previous step, the plugin will provide quantification corresponding to puncta in each channel separately and to colocalized puncta between the two channels.
 
-Note: A screencast of these instructions is available [here](https://github.com/physion/puncta-analyzer/v1/Puncta_Analyzer_Screencast.mp4).
------
+**Note:** A screencast of these instructions is available [here](https://github.com/physion/puncta-analyzer/v1/Puncta_Analyzer_Screencast.mp4).
+
