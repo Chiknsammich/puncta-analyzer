@@ -32,14 +32,88 @@
  * #L%
  */
 
-package us.physion;
+
+import java.awt.geom.Point2D;
 
 /**
- * Masker Inteface
+ * Defines a Puncta
  * 
  * @author Barry Wark
- */ 
-public abstract interface MaskerIF
-{
-   public abstract void mask();
+ */
+public class Puncta {
+   protected Point2D.Double loc;
+   protected double area;
+   protected double perimeter;
+   protected double max;
+   protected double min;
+   protected double mean;
+ 
+   public Puncta(double x, double y) {
+      this.loc = new Point2D.Double(x, y);
+   }
+ 
+   public Puncta(double x, 
+                 double y, 
+                 double area, 
+                 double perimeter, 
+                 double max, 
+                 double min, 
+                 double mean) {
+      this(x, y);
+      this.area = area;
+      this.perimeter = perimeter;
+      this.max = max;
+      this.min = min;
+      this.mean = mean;
+   }
+ 
+   public Puncta(double x, 
+                 double y, 
+                 double area, 
+                 double max, 
+                 double min, 
+                 double mean) {
+      this(x, y);
+      this.area = area;
+      this.max = max;
+      this.min = min;
+      this.mean = mean;
+   }
+ 
+   public double perimeter() {
+      return this.perimeter;
+   }
+ 
+   public double max() {
+      return this.max;
+   }
+ 
+   public double min() {
+      return this.min;
+   }
+ 
+   public double mean() {
+      return this.mean;
+   }
+ 
+   public double area() {
+      return this.area;
+   }
+ 
+   public double distanceTo(Puncta p) {
+      return this.loc.distance(p.loc());
+   }
+ 
+   public double getX() {
+      return this.loc.getX();
+   }
+ 
+   public double getY() {
+      return this.loc.getY();
+   }
+ 
+   public Point2D.Double loc() {
+      return (Point2D.Double)this.loc.clone();
+   }
 }
+

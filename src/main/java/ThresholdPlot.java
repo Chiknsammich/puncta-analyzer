@@ -32,7 +32,6 @@
  * #L%
  */
 
-package us.physion;
 
 import ij.ImagePlus;
 import ij.measure.Measurements;

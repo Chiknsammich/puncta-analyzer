@@ -32,7 +32,6 @@
  * #L%
  */
 
-package us.physion;
 
 /**
  * Defines a Puncta's Masker Factory
