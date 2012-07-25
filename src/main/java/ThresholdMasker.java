@@ -382,7 +382,7 @@ public class ThresholdMasker extends PlugInFrame
   {
      int[] mask = imp.getMask();
      if (mask != null)
-        ip.reset(mask);
+        ip.reset(mask); 
   }
 
   void adjustMinThreshold(ImagePlus imp, ImageProcessor ip, double value) {
