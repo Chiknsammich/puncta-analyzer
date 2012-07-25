@@ -273,7 +273,7 @@ public class ThresholdMasker extends PlugInFrame
     notifyAll();
   }
 
-  ImageProcessor setup(ImagePlus imp)
+  public ImageProcessor setup(ImagePlus imp)
   {
      int type = imp.getType();
      if (type == 4)
@@ -585,32 +585,26 @@ public class ThresholdMasker extends PlugInFrame
      int min = this.minValue;
      int max = this.maxValue;
      int action;
-     int action;
      if (this.doReset) { 
         action = 0;
      }
      else {
-        int action;
         if (this.doAutoAdjust) { 
            action = 1;
         }
         else {
-           int action;
            if (this.doApplyLut) { 
               action = 3;
            }
            else {
-              int action;
               if (this.doStateChange) {
                  action = 4;
               }
               else {
-                 int action;
                  if (this.doSet) { 
                     action = 7;
                  }
                  else {
-                    int action;
                     if (this.minValue >= 0)
                        action = 5;
                     else if (this.maxValue >= 0)
@@ -636,8 +630,11 @@ public class ThresholdMasker extends PlugInFrame
         return;
      }
      
-     if (!imp.lock())
-        imp = null; return;
+     if (!imp.lock()) {
+        imp = null;
+        return;
+     }
+     
      ImageProcessor ip = setup(imp);
      if (ip == null) {
         imp.unlock();

@@ -128,8 +128,23 @@ public class Puncta_Analyzer implements PlugInFilter {
    protected boolean runPrefsDialog()
    {
       GenericDialog gd = new GenericDialog("Analysis Options", IJ.getInstance());
-      gd.addStringField("Condition: ", staticCondition != null ? staticCondition : new String(""));
-      gd.addCheckboxGroup(3, 2, new String[] { "Red Channel", "Green Channel", "Blue Channel", "Subtract Background", "Subtract Background", "Subtract Background" }, new boolean[] { (staticColorChannels & 0x1) != 0 ? 1 : 0, (staticColorChannels & 0x2) != 0 ? 1 : 0, (staticColorChannels & 0x4) != 0 ? 1 : 0, (staticSubtractChannelBackground & 0x1) != 0 ? 1 : 0, (staticSubtractChannelBackground & 0x2) != 0 ? 1 : 0, (staticSubtractChannelBackground & 0x4) != 0 ? 1 : 0 });
+      gd.addStringField("Condition: ", 
+                        staticCondition != null ? staticCondition : new String(""));
+      
+      gd.addCheckboxGroup(3,
+                          2, 
+                          new String[] { "Red Channel", 
+                                         "Green Channel", 
+                                         "Blue Channel", 
+                                         "Subtract Background", 
+                                         "Subtract Background", 
+                                         "Subtract Background" }, 
+                          new boolean[] { (staticColorChannels & 0x1) != 0 ? true : false, 
+                                          (staticColorChannels & 0x2) != 0 ? true : false, 
+                                          (staticColorChannels & 0x4) != 0 ? true : false, 
+                                          (staticSubtractChannelBackground & 0x1) != 0 ? true : false, 
+                                          (staticSubtractChannelBackground & 0x2) != 0 ? true : false, 
+                                          (staticSubtractChannelBackground & 0x4) != 0 ? true : false });
       gd.addCheckbox("Set results file...", !staticReultsFileHeaderWritten);
       gd.addCheckbox("Save results", staticReultsFileHeaderWritten);
       gd.addStringField("Current results file: ", resultsFile != null ? resultsFile.getPath() : "No results file selected", resultsFile != null ? resultsFile.getPath().length() : new String("No results file selected").length());
@@ -232,7 +247,6 @@ public class Puncta_Analyzer implements PlugInFilter {
             displayPunctaStatistics();
             if ((resultsFile != null) && (staticSaveResults) && (userRequestsSaveData())) {
                if (resultsFile.canWrite()) { 
-                  MessageDialog d;
                   try { 
                      writeResultsToFile();
                   } catch (IOException e) {
@@ -551,7 +565,6 @@ public class Puncta_Analyzer implements PlugInFilter {
  
       Roi roi = this.imp.getRoi();
       Rectangle roiRect;
-      Rectangle roiRect;
       if (roi != null)
          roiRect = roi.getBoundingRect();
       else
@@ -605,7 +618,7 @@ public class Puncta_Analyzer implements PlugInFilter {
  
       if ((staticColorChannels & 0x1) != 0) {
          IJ.showStatus("Analyzing Red...");
-         rTables[1] = locatePunctaInColorBand(imp, rBytes, "Red", (staticSubtractChannelBackground & 0x1) != 0 ? 1 : false);
+         rTables[1] = locatePunctaInColorBand(imp, rBytes, "Red", (staticSubtractChannelBackground & 0x1) != 0 ? true : false);
          if (rTables[1] == null) {
             return null;
          }
@@ -613,7 +626,7 @@ public class Puncta_Analyzer implements PlugInFilter {
       
       if ((staticColorChannels & 0x2) != 0) {
          IJ.showStatus("Analyzing Green...");
-         rTables[2] = locatePunctaInColorBand(imp, gBytes, "Green", (staticSubtractChannelBackground & 0x2) != 0 ? 1 : false);
+         rTables[2] = locatePunctaInColorBand(imp, gBytes, "Green", (staticSubtractChannelBackground & 0x2) != 0 ? true : false);
          if (rTables[2] == null) {
             return null;
          }
@@ -621,7 +634,7 @@ public class Puncta_Analyzer implements PlugInFilter {
 
       if ((staticColorChannels & 0x4) != 0) {
          IJ.showStatus("Analyzing Blue...");
-         rTables[4] = locatePunctaInColorBand(imp, bBytes, "Blue", (staticSubtractChannelBackground & 0x4) != 0 ? 1 : false);
+         rTables[4] = locatePunctaInColorBand(imp, bBytes, "Blue", (staticSubtractChannelBackground & 0x4) != 0 ? true : false);
          if (rTables[4] == null) {
             return null;
          }
