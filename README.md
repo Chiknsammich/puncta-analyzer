@@ -1,11 +1,28 @@
-Puncta-Analyzer 
-===============
+puncta-analyzer v1.1
+====================
 
-Puncta Analyzer is an ImageJ plugin for detecting and quantifying punctate co-localization in multi-channel images.
+Puncta Analyzer is an ImageJ plugin for detecting and quantifying punctate co-localization in multi-channel images. 
 
-Instructions:
+Build Instructions:
+-------------------
+1. Install JDK
 
-1. Puncta Analyzer v1 runs in ImageJ 1.29. To install ImageJ with Puncta Analyzer simply download the [puncta-analyzer-v1.zip](https://github.com/physion/puncta-analyzer/blob/v1.1/archive/puncta-analyzer-v1.zip?raw=true) and uncompress. Double-click on ij.jar to launch.
+2. Install maven
+
+3. Check out [puncta analyzer v1.1 code](https://github.com/physion/puncta-analyzer/tree/v1.1) from github (or [download project zip](https://github.com/physion/puncta-analyzer/zipball/v1.1))
+
+4. Execute 'mvn compile' in project directory (where the pom.xml is located)
+
+5. Create a 'PunctaAnalyzer' directory in the your ImageJ plugins directory 
+
+6. Copy all of the class files (bytecode) in target/classes to plugins/PunctaAnalyzer
+
+Operational Instructions:
+-------------------------
+
+1. Puncta Analyzer v1.1 has been tested against builds of ImageJ 1.23y (see steps above to reproduce). The V1.1 codebase may build and work off later versions of ImageJ 1.x. This codebase will not work in ImageJ 2.x. Please see the [main project page](https://github.com/physion/puncta-analyzer) for progress towards ImageJ 2.x. To install ImageJ 1.29 with the Puncta Analyzer already included (from the original binaries) simply download [puncta-analyzer-v1.zip](https://github.com/physion/puncta-analyzer/blob/v1.1/archive/puncta-analyzer-v1.zip?raw=true) and uncompress. Double-click on ij.jar to launch.
+
+https://github.com/physion/puncta-analyzer/blob/v1.1/v1/puncta-analyzer-v1.zip?raw=true
 
 2. Open the ins1.tif image located in samples directory. Use one of the selection tools in the ImageJ menu to determine the region of interest (ROI). We regularly use the circular selection tool to select a region approximately one-cell diameter radially around the soma of interest.
 
@@ -23,4 +40,12 @@ Instructions:
 
 **Note:** A screencast of these instructions is available [here](https://github.com/physion/puncta-analyzer/blob/v1.1/archive/screencast/Puncta_Analyzer_Screencast.mp4?raw=true).
 
-The project page, current builds, and wiki is available [here](https://github.com/physion/puncta-analyzer).
+Relevant links:
+---------------
+Project Home: [Puncta Analyzer](https://github.com/physion/puncta-analyzer)
+
+Legacy version: [Puncta Analyzer v1.1](https://github.com/physion/puncta-analyzer/tree/v1.1)
+
+Continuous integration: [travis-ci.org] (http://travis-ci.org/#!/physion/puncta-analyzer)
+
+Underlying technology: [ImageJ](dev.imagej.net) 
