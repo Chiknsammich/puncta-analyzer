@@ -4,23 +4,14 @@
   	<groupId>us.physion</groupId>
   	<artifactId>puncta-analyzer</artifactId>
   	<packaging>jar</packaging>
-  	<version>2.0-SNAPSHOT</version>
+  	<version>2.0.0-SNAPSHOT</version>
   	<name>Puncta Analyzer</name>
   	<url>https://github.com/physion/puncta-analyzer</url>
-  	<build>
-		<plugins>
-  			<plugin>
-    			<groupId>org.apache.maven.plugins</groupId>
-    			<artifactId>maven-compiler-plugin</artifactId>
-				<version>2.5.1</version>
-  			</plugin>
-		</plugins>
-	</build>
 	<dependencies>
 		<dependency>
 		  	<groupId>net.imagej</groupId>
 				<artifactId>ij-legacy</artifactId>
-				<version>2.0-SNAPSHOT</version>
+				<version>2.0.0-SNAPSHOT</version>
 		</dependency>
   	</dependencies>
 	<repositories>

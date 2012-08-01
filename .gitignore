@@ -9,5 +9,3 @@
 *.war
 *.ear
 
-# puncta analyzer v1 binaries #
-/v1/puncta-analyzer-v1/*
