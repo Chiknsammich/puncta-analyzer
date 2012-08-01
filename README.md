@@ -9,7 +9,7 @@ Build Instructions:
 
 2. Install maven
 
-3. Check out [puncta analyzer v1.1 code](https://github.com/physion/puncta-analyzer/tree/v1.1) from github (or [download project zip](https://github.com/physion/puncta-analyzer/zipball/v1.1))
+3. Fork the [puncta analyzer v1.1 repo](https://github.com/physion/puncta-analyzer/tree/v1.1) from github (or [download project zip](https://github.com/physion/puncta-analyzer/zipball/v1.1))
 
 4. Execute 'mvn compile' in project directory (where the pom.xml is located)
 
