@@ -3,15 +3,19 @@
 	<modelVersion>4.0.0</modelVersion>
   	<groupId>us.physion</groupId>
   	<artifactId>puncta-analyzer</artifactId>
-  	<packaging>jar</packaging>
   	<version>2.0.0-SNAPSHOT</version>
   	<name>Puncta Analyzer</name>
   	<url>https://github.com/physion/puncta-analyzer</url>
+	<parent>
+		<groupId>org.scijava</groupId>
+		<artifactId>pom-scijava</artifactId>
+		<version>1.17</version>
+	</parent>
 	<dependencies>
 		<dependency>
 		  	<groupId>net.imagej</groupId>
 				<artifactId>ij-legacy</artifactId>
-				<version>2.0.0-SNAPSHOT</version>
+				<version>${imagej.version}</version>
 		</dependency>
   	</dependencies>
 	<repositories>
