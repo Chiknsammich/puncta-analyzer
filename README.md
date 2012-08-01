@@ -1,18 +1,33 @@
-Puncta Analyzer 2
-=================
+Puncta-Analyzer 
+===============
 
-Puncta Analyzer for ImageJ2
+Puncta Analyzer is an ImageJ plugin for detecting and quantifying punctate co-localization in multi-channel images.	
+
+Build Instructions:
+-------------------
+1. Install JDK
+
+2. Install maven
+
+3. [Fork](https://help.github.com/articles/fork-a-repo) the puncta analyzer repo (or [download project zip](https://github.com/physion/puncta-analyzer/zipball/master))
+
+4. Execute 'mvn compile' in project directory (where the pom.xml is located)
+
+5. Create a 'PunctaAnalyzer' directory in the your ImageJ plugins directory 
+
+6. Copy all of the class files (bytecode) in target/classes to plugins/PunctaAnalyzer
+
+
+Relevant links:
+---------------
+Project Home: [Puncta Analyzer](https://github.com/physion/puncta-analyzer)
+
+Operational Instructions: [Documentation](https://github.com/physion/puncta-analyzer/tree/master/doc)
 
 Continuous integration: [travis-ci.org] (http://travis-ci.org/#!/physion/puncta-analyzer)
 
-License
--------
+Underlying technology: [ImageJ](http://dev.imagej.net) 
 
-Copyright (c) 2012, Physion Consulting LLC
-All rights reserved.
+Legacy version: [Puncta Analyzer v1.1](https://github.com/physion/puncta-analyzer/tree/v1.1)
 
-Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
 
-Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.
-Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.
-THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
