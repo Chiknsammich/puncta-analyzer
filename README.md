@@ -9,7 +9,7 @@ Build Instructions:
 
 2. Install maven
 
-3. [Fork](https://help.github.com/articles/fork-a-repo) the puncta analyzer repo (or [download project zip](https://github.com/toddstavish/puncta-analyzer/zipball/master))
+3. [Fork](https://help.github.com/articles/fork-a-repo) the puncta analyzer repo (or [download project zip](https://github.com/physion/puncta-analyzer/zipball/master))
 
 4. Execute 'mvn compile' in project directory (where the pom.xml is located)
 
@@ -22,11 +22,11 @@ Relevant links:
 ---------------
 Project Home: [Puncta Analyzer](https://github.com/physion/puncta-analyzer)
 
-Operational Instructions: [Documentation](./doc/instructions.md)
+Operational Instructions: [Documentation](https://github.com/physion/puncta-analyzer/tree/master/doc)
 
 Continuous integration: [travis-ci.org] (http://travis-ci.org/#!/physion/puncta-analyzer)
 
-Underlying technology: [ImageJ](dev.imagej.net) 
+Underlying technology: [ImageJ](http://dev.imagej.net) 
 
 Legacy version: [Puncta Analyzer v1.1](https://github.com/physion/puncta-analyzer/tree/v1.1)
 
