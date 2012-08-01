@@ -2,7 +2,7 @@ Operational Instructions:
 -------------------------
 1. Puncta Analyzer v2.0 has been tested against builds of ImageJ 2.0.0-SNAPSHOT. Please see the [main project page](https://github.com/physion/puncta-analyzer) for progress and build instructions. To install ImageJ 2 with the Puncta Analyzer already included, please download the precompiled and assembled binary  [puncta-analyzer-v2.zip](./puncta-analyzer-v2.zip?raw=true) and uncompress. 
 
-2. Open the [ins1.tif](./ins1.tif) image located in the doc directory. Use one of the selection tools in the ImageJ menu to determine the region of interest (ROI). We regularly use the circular selection tool to select a region approximately one-cell diameter radially around the soma of interest.
+2. Open the [ins1.tif](./ins1.tif?raw=true) image located in the doc directory. Use one of the selection tools in the ImageJ menu to determine the region of interest (ROI). We regularly use the circular selection tool to select a region approximately one-cell diameter radially around the soma of interest.
 
 3. With your region of interest (ROI) selected, go to the plugins menu and select "Puncta Analyzer".
 
