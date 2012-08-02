@@ -70,7 +70,7 @@ import java.awt.event.AdjustmentListener;
 import java.awt.event.WindowEvent;
 
 /**
- * Masks threshhold
+ * Masks threshold
  * 
  * @author Barry Wark
  */
