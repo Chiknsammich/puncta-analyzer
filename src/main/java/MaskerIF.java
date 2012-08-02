@@ -34,7 +34,7 @@
 
 
 /**
- * Masker Inteface
+ * Masker Interface
  * 
  * @author Barry Wark
  */ 
