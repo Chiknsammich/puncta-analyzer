@@ -1,7 +1,7 @@
 puncta-analyzer v1.1
 ====================
 
-Puncta Analyzer is an ImageJ plugin for detecting and quantifying punctate co-localization in multi-channel images. 
+Puncta Analyzer v1.1 is an ImageJ 1.x plugin for detecting and quantifying punctate co-localization in multi-channel images. 
 
 Build Instructions:
 -------------------
