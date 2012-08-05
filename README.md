@@ -1,7 +1,7 @@
 Puncta-Analyzer v2.0 LEGACY
 ===========================
 
-Puncta Analyzer v2.0 is an ImageJ 2.0 (ij-legacy) plugin for detecting and quantifying punctate co-localization in multi-channel images.	
+Puncta Analyzer v2.0 LEGACY is an ImageJ 2.0 (ij-legacy) plugin for detecting and quantifying punctate co-localization in multi-channel images. The legacy version uses the ImageJ 1.x API built against ImageJ 2.0 ij-legacy jars.
 
 Build Instructions:
 -------------------
@@ -9,7 +9,7 @@ Build Instructions:
 
 2. Install maven
 
-3. [Fork](https://help.github.com/articles/fork-a-repo) the puncta analyzer repo (or [download project zip](https://github.com/physion/puncta-analyzer/zipball/master))
+3. [Fork](https://help.github.com/articles/fork-a-repo) the puncta analyzer repo (or [download project zip](https://github.com/physion/puncta-analyzer/zipball/v2.0-legacy))
 
 4. Execute 'mvn compile' in project directory (where the pom.xml is located)
 
@@ -20,7 +20,7 @@ Build Instructions:
 
 Relevant links:
 ---------------
-Project Home: [Puncta Analyzer](https://github.com/physion/puncta-analyzer)
+Project Home: [Puncta Analyzer v2.0](https://github.com/physion/puncta-analyzer)
 
 Operational Instructions: [Documentation](https://github.com/physion/puncta-analyzer/tree/master/doc)
 
