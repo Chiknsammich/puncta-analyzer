@@ -1,7 +1,7 @@
-Puncta-Analyzer v2.0 LEGACY
-===========================
+Puncta-Analyzer v2.0
+====================
 
-Puncta Analyzer v2.0 is an ImageJ 2.0 (ij-legacy) plugin for detecting and quantifying punctate co-localization in multi-channel images.	
+Puncta Analyzer v2.0 is an ImageJ 2.0 plugin for detecting and quantifying punctate co-localization in multi-channel images.	
 
 Build Instructions:
 -------------------

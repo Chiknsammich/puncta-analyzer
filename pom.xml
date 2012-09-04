@@ -14,7 +14,7 @@
 	<dependencies>
 		<dependency>
 		  	<groupId>net.imagej</groupId>
-				<artifactId>ij-legacy</artifactId>
+				<artifactId>ij-core</artifactId>
 				<version>${imagej.version}</version>
 		</dependency>
   	</dependencies>
