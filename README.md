@@ -9,7 +9,7 @@ Build Instructions:
 
 2. Install maven
 
-3. [Fork](https://help.github.com/articles/fork-a-repo) the puncta analyzer repo (or [download project zip](https://github.com/physion/puncta-analyzer/zipball/master))
+3. [Fork](https://github.com/physion/puncta-analyzer/fork_select) the puncta analyzer repo (or [download project zip](https://github.com/physion/puncta-analyzer/zipball/master))
 
 4. Execute 'mvn package' in project directory (where the pom.xml is located)
 
