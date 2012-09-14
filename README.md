@@ -1,7 +1,7 @@
 Puncta-Analyzer v2.0
 ====================
 
-Puncta Analyzer v2.0 is an ImageJ 2.0 plugin for detecting and quantifying punctate co-localization in multi-channel images.	
+Puncta Analyzer v2.0 is an ImageJ 2.0 plugin for detecting and quantifying punctate co-localization in multi-channel images.
 
 Build Instructions:
 -------------------
@@ -26,7 +26,7 @@ Operational Instructions: [Documentation](https://github.com/physion/puncta-anal
 
 Continuous integration: [travis-ci.org] (http://travis-ci.org/#!/physion/puncta-analyzer)
 
-Underlying technology: [ImageJ](http://dev.imagej.net) 
+Underlying technology: [ImageJ](http://dev.imagej.net)
 
 Previous version: [Puncta Analyzer v1.1](https://github.com/physion/puncta-analyzer/tree/v1.1)
 
