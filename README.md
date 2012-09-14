@@ -11,11 +11,9 @@ Build Instructions:
 
 3. [Fork](https://help.github.com/articles/fork-a-repo) the puncta analyzer repo (or [download project zip](https://github.com/physion/puncta-analyzer/zipball/master))
 
-4. Execute 'mvn compile' in project directory (where the pom.xml is located)
+4. Execute 'mvn package' in project directory (where the pom.xml is located)
 
-5. Create a 'PunctaAnalyzer' directory in the your ImageJ plugins directory 
-
-6. Copy all of the class files (bytecode) in target/classes to plugins/PunctaAnalyzer
+5. Copy the .jar file from target/ to ImageJ's plugins/ directory
 
 
 Relevant links:
