@@ -9,3 +9,5 @@
 *.war
 *.ear
 
+# Maven
+target/
